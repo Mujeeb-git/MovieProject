@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="44635" started-at="2019-01-26T14:28:37Z" finished-at="2019-01-26T14:29:22Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="44635" started-at="2019-01-26T14:28:37Z" finished-at="2019-01-26T14:29:22Z">
+      <class name="Movie_Test.MovieTestCase">
+        <test-method status="PASS" signature="MovieTest()[pri:0, instance:Movie_Test.MovieTestCase@2e3fc542]" name="MovieTest" duration-ms="43715" started-at="2019-01-26T14:28:37Z" finished-at="2019-01-26T14:29:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MovieTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Movie_Test.MovieTestCase@2e3fc542]" name="tearDown" is-config="true" duration-ms="867" started-at="2019-01-26T14:29:21Z" finished-at="2019-01-26T14:29:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Movie_Test.MovieTestCase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<!-- <listener class-name="org.uncommons.reportng.HTMLReporter"/> <listener 
+			class-name="org.uncommons.reportng.JUnitXMLReporter"/> -->
+		<!-- <listener class-name="Listeners.TestListener"></listener> -->
+
+		<listener class-name="Listeners.TestListener" />
+		<!-- <listener class-name="listeners.AnnotationTransformer" /> -->
+	</listeners>
+	<test thread-count="5" name="Test">
+
+	<classes>
+		<class name="SurveyPage_Tests.SurveyRewardSingleWinnerTest">
+				<methods>
+					<include name="SurveySingleWinner" />
+				</methods>
+		</class> <!-- Survey Single Winner page -->
+		
+		<class name="SurveyPage_Tests.SurveyRewardMultiWinnerTest">
+				<methods>
+					<exclude name="SurveyRewardMultiWinner" />
+				</methods>
+		</class> <!-- Survey Multiple Winner page -->
+		
+			<class name="QuizPage_Tests.CreateQuizTest">
+				<methods>
+					<exclude name="CreateQuizDetails" />
+				</methods>
+		</class> <!-- Quiz page -->
+					
+		<class name="EventPage_Tests.EventTestCases">
+				<methods>
+					<exclude name="EventWithTickets" />
+					<exclude name="EventWithoutTickets" />
+				</methods>
+		</class> <!-- event page -->
+			
+		<class name="MarketPlace_Tests.Marketplace">
+				<methods>
+					<exclude name="MarketPlaceTickets" />
+					<exclude name="MarketPlaceServices" />
+					<exclude name="MarketPlaceHotel" />
+					<exclude name="MarketplaceTicketPackages" />
+					<exclude name="MarketplaceCouponCodes" />
+				</methods>
+		</class> <!-- MarketPlace -->
+			
+	</classes>
+
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
